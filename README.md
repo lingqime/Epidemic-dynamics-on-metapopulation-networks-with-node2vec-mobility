@@ -6,6 +6,6 @@ All the data sets are included in the folder `data set`. The ER random graph, BA
 
 The heat map matrices presented in Figs. 4 and 5 are contained in the folder `Numerical results`. One can discern them by their nomenclatures. For example, `Epidemic threshold via ER-100-6-1 a, b.npy` represents the epidemic threshold on ER random graph in terms of a and b, i.e., Fig. 4(a) in the paper. 
 
-All the numerical results was realized by Jupyter notebook. The codes can be found in the folder `Codes`.
+All the numerical results were fulfilled by Jupyter Notebook. The codes can be found in the folder `Codes`.
 
 If there is any question, please email lingqime@buffalo.edu.
