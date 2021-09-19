@@ -9,6 +9,21 @@ The code of Euler method in Fig. 2 and its Monte Carlo simulation is presented i
 
 ![Euler method](https://github.com/lingqime/Epidemic-dynamics-on-metapopulation-networks-with-node2vec-mobility/blob/main/images/image_1.png)
 
+Here are some explanations for the loop below:
+
+`for beta in np.linspace(0.002, 0.03, 15):` represents the infection rate, `beta = 0.002, 0.004, ..., 0.03`, respetively. We assume `rho = 50`. Therefore, `rho*beta = 0.1, 0.2, ..., 1.5`, respectively.
+
+Given the infection rate `beta` and each configuration `(a, b)`, we will run the Monte Carlo simulation 100 times. It is represented by the loop `for ITERATION in range(0, 100):`.
+
+`for iteration in range(0, 30000):` represents the times of iteration for each simulation. Because we assume `dt = 0.01` above, the total time in the model is `t = 0.01*30000 = 300` unit time.
+
+`arr = [[random.choice(Directed_edges), 'S'] for i in range(0, rho*(N - 1))]` and `arr = arr + [[random.choice(Directed_edges), 'I'] for i in range(0, rho)]` represents that there are 1% individuals initially infected. One can customize by chaning the initial condition here.
+
+`for i in range(0, len(arr)):` represents that we are considering the reaction process for each individual.
+
+![Monte Carlo iteration](https://github.com/lingqime/Epidemic-dynamics-on-metapopulation-networks-with-node2vec-mobility/blob/main/images/image_2.png)
+
+
 The heat map matrices presented in Figs. 4 and 5 are contained in the folder `Numerical results`. One can discern them by their nomenclatures. For example, `Epidemic threshold via ER-100-6-1 a, b.npy` represents the epidemic threshold on ER random graph in terms of a and b, i.e., Fig. 4(a) in the paper. 
 
 All the numerical results were fulfilled by [Jupyter Notebook](https://jupyter.org/). The codes can be found in the folder `Codes`.
