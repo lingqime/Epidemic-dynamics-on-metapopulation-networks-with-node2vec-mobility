@@ -27,7 +27,9 @@ In `Fig. 2 Euler method and Monte Carlo simulation.ipynb`, we only showed that t
 `next_edge = random.choices(Directed_edges, weights = T1[Directed_edges.index(arr[i][0])])[0]` to consider other combinations of `(a,b)`. For example, 
 
 `T2[Directed_edges.index(arr[i][0])])[0]` represents `(a,b) = (5, 0.1)`
+
 `T3[Directed_edges.index(arr[i][0])])[0]` represents `(a,b) = (0.1, 5)`
+
 `T4[Directed_edges.index(arr[i][0])])[0]` represents `(a,b) = (5, 5)`
 
 
