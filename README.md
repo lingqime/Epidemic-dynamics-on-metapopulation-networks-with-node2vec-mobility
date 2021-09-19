@@ -38,11 +38,9 @@ In `Fig. 2 Euler method and Monte Carlo simulation.ipynb`, we only showed that t
 Monte Carlo simulation is sensitive to the initial condition. For example, if we assume that there are 1% individuals or all individuals initially infected, choice of the stepsize `t = 0.01` is safe. However, if the initial condition is that there is only one individual initially infected, then the safe initial condition is `t = 10^{-4}`. Otherwise, one will see that the individual is very likely to recover before he/she propagate disease to the other individuals.
 
 ### Another remark:
-We saved the simulation results with different inital conditions in the folders `Monte Carlo simulation one percent`, `Monte Carlo simulation all infected`, and `Monte Carlo simulation one infected`, repectively. It is very time consuming for us to run the Monte Carlo simulations. Therefore, we truncated the loop into small pieces and saved the results by parts. `data1`, `data2`, `data3`, and `data4` represents `(a,b)=(0.1, 0.1)`, `(a,b)=(5, 0.1)`, `(a,b)=(0.1, 5)`, `(a,b)=(5, 5)`, respectively. `part1`,...,`part15` represents `rho*beta = 0.1,...,1.5`, respectively. For example, 
+We saved the simulation results with different inital conditions in the folders `Monte Carlo simulation one percent`, `Monte Carlo simulation all infected`, and `Monte Carlo simulation one infected`, repectively. It is very time consuming for us to run the Monte Carlo simulations. Therefore, we truncated the loop into small pieces and saved the results by parts. `data1`, `data2`, `data3`, and `data4` represents `(a,b)=(0.1, 0.1)`, `(a,b)=(5, 0.1)`, `(a,b)=(0.1, 5)`, `(a,b)=(5, 5)`, respectively. `part1`,...,`part15` represents `rho*beta = 0.1,...,1.5`, respectively. For example, the filename `list_new_data2_part5.npy` represents the Monte Carlo simulation results under the condition `(a, b) = (5, 0.1)` and `beta*rho = 0.5`.
 
-the filename `list_new_data2_part5.npy` represents the Monte Carlo simulation results under the condition `(a, b) = (5, 0.1)` and `beta*rho = 0.5`.
-
-
+After obtaining all the results (Euler method and Monte Carlo simulation) from `Fig. 2 Euler method and Monte Carlo simulation.ipynb`, one can use the file `Plot Fig. 2.ipynb` to visualize the results.
 
 The heat map matrices presented in Figs. 4 and 5 are contained in the folder `Numerical results`. One can discern them by their nomenclatures. For example, `Epidemic threshold via ER-100-6-1 a, b.npy` represents the epidemic threshold on ER random graph in terms of a and b, i.e., Fig. 4(a) in the paper. 
 
