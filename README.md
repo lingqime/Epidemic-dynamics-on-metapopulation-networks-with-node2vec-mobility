@@ -34,7 +34,8 @@ In `Fig. 2 Euler method and Monte Carlo simulation.ipynb`, we only showed that t
 
 ![Diffusion process](https://github.com/lingqime/Epidemic-dynamics-on-metapopulation-networks-with-node2vec-mobility/blob/main/images/image_3.png)
 
-## A short remark: Monte Carlo simulation is sensitive to the initial condition. For example, if we assume that there are 1% individuals or all individuals initially infected, choice of the stepsize `t = 0.01` is safe. However, if the initial condition is that there is only one individual initially infected, then the safe initial condition is `t = 10^{-4}`. Otherwise, one will see that the individual is very likely to recover before he/she propagate disease to the other individuals.
+### A short remark: 
+Monte Carlo simulation is sensitive to the initial condition. For example, if we assume that there are 1% individuals or all individuals initially infected, choice of the stepsize `t = 0.01` is safe. However, if the initial condition is that there is only one individual initially infected, then the safe initial condition is `t = 10^{-4}`. Otherwise, one will see that the individual is very likely to recover before he/she propagate disease to the other individuals.
 
 The heat map matrices presented in Figs. 4 and 5 are contained in the folder `Numerical results`. One can discern them by their nomenclatures. For example, `Epidemic threshold via ER-100-6-1 a, b.npy` represents the epidemic threshold on ER random graph in terms of a and b, i.e., Fig. 4(a) in the paper. 
 
