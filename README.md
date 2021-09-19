@@ -4,6 +4,8 @@ The data sets, numerical simulations, and Python codes are all presented in this
 
 All the data sets are included in the folder `data set`. The ER random graph, BA model, Random clustered graph, Power-law cluster graph, Geographical threshold graph, LFR model, US airport network, Manizales network presented in the paper are named as `ER-100-6-1.txt`, `BA-100-3-1.txt`, `random clustered graph indpendent 1.txt`, `powerlaw cluster graph p=0.5.txt`, `geographical threshold graph with threshold 80.txt`, `LFR model small mu.txt`, `USAir97-unweighted.txt`, and `colombian.txt`, respectively.
 
+All the numerical results were fulfilled by [Jupyter Notebook](https://jupyter.org/). The codes can be found in the folder `Codes`.
+
 The code of Euler method in Fig. 2 and its Monte Carlo simulation is presented in `Fig. 2 Euler method and Monte Carlo simulation.ipynb`. For Euler method (cell [8]), the stepsize `h = 0.01` and its iteration times `iteration = 30000`. For Monte Carlo method (cell [11]), the stepsize `dt = 0.01` and it iterated 30000 times. (See the figure below). 
 
 
@@ -43,7 +45,5 @@ We saved the simulation results with different inital conditions in the folders 
 After obtaining all the results (Euler method and Monte Carlo simulation) from `Fig. 2 Euler method and Monte Carlo simulation.ipynb`, one can use the file `Plot Fig. 2.ipynb` to visualize the results. However, you need to TeX installed on your local computer before running `Plot Fig. 2.ipynb`. For details, please see https://matplotlib.org/stable/gallery/text_labels_and_annotations/tex_demo.html
 
 The heat map matrices presented in Figs. 4 and 5 are contained in the folder `Numerical results`. One can discern them by their nomenclatures. For example, `Epidemic threshold via ER-100-6-1 a, b.npy` represents the epidemic threshold on ER random graph in terms of a and b, i.e., Fig. 4(a) in the paper. 
-
-All the numerical results were fulfilled by [Jupyter Notebook](https://jupyter.org/). The codes can be found in the folder `Codes`.
 
 If there is any question, please email lingqime@buffalo.edu or lingqime@gmail.com.
