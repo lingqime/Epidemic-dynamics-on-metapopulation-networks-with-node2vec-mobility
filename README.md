@@ -8,4 +8,4 @@ The heat map matrices presented in Figs. 4 and 5 are contained in the folder `Nu
 
 All the numerical results were fulfilled by [Jupyter Notebook](https://jupyter.org/). The codes can be found in the folder `Codes`.
 
-If there is any question, please email lingqime@buffalo.edu.
+If there is any question, please email lingqime@buffalo.edu or lingqime@gmail.com.
