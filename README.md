@@ -23,7 +23,13 @@ Given the infection rate `beta` and each configuration `(a, b)`, we will run the
 
 ![Monte Carlo iteration](https://github.com/lingqime/Epidemic-dynamics-on-metapopulation-networks-with-node2vec-mobility/blob/main/images/image_2.png)
 
-In the 
+In `Fig. 2 Euler method and Monte Carlo simulation.ipynb`, we only showed that the diffusion process for `(a,b) = (0.1,0.1)`. If one can change the code
+`next_edge = random.choices(Directed_edges, weights = T1[Directed_edges.index(arr[i][0])])[0]` to consider other combinations of `(a,b)`. For example, 
+
+`T2[Directed_edges.index(arr[i][0])])[0]` represents `(a,b) = (5, 0.1)`
+`T3[Directed_edges.index(arr[i][0])])[0]` represents `(a,b) = (0.1, 5)`
+`T4[Directed_edges.index(arr[i][0])])[0]` represents `(a,b) = (5, 5)`
+
 
 
 The heat map matrices presented in Figs. 4 and 5 are contained in the folder `Numerical results`. One can discern them by their nomenclatures. For example, `Epidemic threshold via ER-100-6-1 a, b.npy` represents the epidemic threshold on ER random graph in terms of a and b, i.e., Fig. 4(a) in the paper. 
