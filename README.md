@@ -40,7 +40,7 @@ Monte Carlo simulation is sensitive to the initial condition. For example, if we
 ### Another remark:
 We saved the simulation results with different inital conditions in the folders `Monte Carlo simulation one percent`, `Monte Carlo simulation all infected`, and `Monte Carlo simulation one infected`, repectively. It is very time consuming for us to run the Monte Carlo simulations. Therefore, we truncated the loop into small pieces and saved the results by parts. `data1`, `data2`, `data3`, and `data4` represents `(a,b)=(0.1, 0.1)`, `(a,b)=(5, 0.1)`, `(a,b)=(0.1, 5)`, `(a,b)=(5, 5)`, respectively. `part1`,...,`part15` represents `rho*beta = 0.1,...,1.5`, respectively. For example, the filename `list_new_data2_part5.npy` represents the Monte Carlo simulation results under the condition `(a, b) = (5, 0.1)` and `beta*rho = 0.5`.
 
-After obtaining all the results (Euler method and Monte Carlo simulation) from `Fig. 2 Euler method and Monte Carlo simulation.ipynb`, one can use the file `Plot Fig. 2.ipynb` to visualize the results.
+After obtaining all the results (Euler method and Monte Carlo simulation) from `Fig. 2 Euler method and Monte Carlo simulation.ipynb`, one can use the file `Plot Fig. 2.ipynb` to visualize the results. However, you need to TeX installed on your local computer before running `Plot Fig. 2.ipynb`. For details, please see https://matplotlib.org/stable/gallery/text_labels_and_annotations/tex_demo.html
 
 The heat map matrices presented in Figs. 4 and 5 are contained in the folder `Numerical results`. One can discern them by their nomenclatures. For example, `Epidemic threshold via ER-100-6-1 a, b.npy` represents the epidemic threshold on ER random graph in terms of a and b, i.e., Fig. 4(a) in the paper. 
 
